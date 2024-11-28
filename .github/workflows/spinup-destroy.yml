@@ -1,6 +1,9 @@
 name: Configure Azure environment
 
 on:
+  workflow_dispatch:
+  push:
+    branches: [ spinup-destroy ]
   pull_request:
     types: [labeled]
 
